@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exercicio2">
+    <link rel="stylesheet" href="listaDeTarefas.css">
+    <script src="listaDeTarefas.js" defer></script>
+    <title>Exercicio2</title>
+</head>
+<body>
+    <main>
+        <article>
+            <h1>Lista de Tarefas</h1>
+           <section>
+            <form id="formularioTarefa">
+                <label for="tarefas">Tarefas</label>
+                <input type="text" id="tarefas" required>
+                <button type="submit">Adicionar</button>
+            </form>
+           </section>
+           <section>
+            <h2>Tarefas Pendentes</h2>
+            <ul id="listaTarefas"></ul>
+           </section>
+           <section>
+            <h2>Tarefas Concluidas</h2>
+            <ul id="tarefasConcluidas"></ul>
+           </section>
+        </article>
+    </main>
+</body>
+</html>
