@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exercicio3">
+    <link rel="stylesheet" href="./cadastroDeCelulares.css">
+    <script src="./cadastroDeCelulares.js" defer></script>
+    <title>Exercicio3</title>
+</head>
+<body>
+  <h1>Cadastro de celulares</h1>
+
+  <form id="formularioDeCadastro" action="#" method="post">
+    
+    <label for="marca">Marca:</label>
+    <select id="marca" name="marca">
+      <option value="samsung">Samsung</option>
+      <option value="iphone">iPhone</option>
+      <option value="motorola">Motorola</option>
+      <option value="lg">LG</option>
+      <option value="outra">Outra</option>
+    </select>
+    <br><br>
+
+    <label for="modelo">Modelo:</label>
+    <input type="text" id="modelo" name="modelo">
+    <br><br>
+
+    <label for="cor">Cor:</label>
+    <input type="text" id="cor" name="cor">
+    <br><br>
+
+    <label for="valor">Valor:</label>
+    <input type="number" id="valor" name="valor" step="0.01">
+    <br><br>
+
+    <label>Condição:</label><br>
+    <input type="radio" id="novo" name="condicao" value="novo">
+    <label for="novo">Novo</label><br>
+
+    <input type="radio" id="usado" name="condicao" value="usado">
+    <label for="usado">Usado</label>
+    <br><br>
+
+    <label for="info">Demais informações:</label><br>
+    <textarea id="info" name="info" rows="4" cols="50"></textarea>
+    <br><br>
+
+    <button id="salvar" type="submit" disabled>Salvar</button>
+    <button id="voltar" type="button" onclick="history.back()">Voltar</button>
+
+  </form>
+</body>
+</html>
