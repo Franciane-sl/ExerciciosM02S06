@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f8ff;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1 {
+  margin-top: 30px;
+  color: #003366;
+}
+
+form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 90%;
+  max-width: 500px;
+}
+
+label {
+  font-weight: bold;
+  color: #003366;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #003366;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #0055aa;
+}
+
+body.tema-escuro {
+  background-color: #1c1c1c;
+  color: #ffffff;
+}
+
+body.tema-escuro h1 {
+  color: #80bfff; 
+}
+
+body.tema-escuro form {
+  background-color: #2b2b2b;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+body.tema-escuro label {
+  color: #ffffff;
+}
+
+body.tema-escuro input[type="text"],
+body.tema-escuro input[type="number"],
+body.tema-escuro select,
+body.tema-escuro textarea {
+  background-color: #444;
+  color: #fff;
+  border: 1px solid #666;
+}
+
+body.tema-escuro input::placeholder,
+body.tema-escuro textarea::placeholder {
+  color: #aaa;
+}
+
+body.tema-escuro button {
+  background-color: #444;
+  color: #fff;
+}
+
+body.tema-escuro button:hover {
+  background-color: #666;
+}
